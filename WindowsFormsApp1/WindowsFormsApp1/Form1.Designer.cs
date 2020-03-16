@@ -32,8 +32,9 @@
             this.aluNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.aluNota = new System.Windows.Forms.TextBox();
             this.listaAlumnos = new System.Windows.Forms.TextBox();
+            this.aluNota = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.aluNota)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -71,13 +72,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Nota";
             // 
-            // aluNota
-            // 
-            this.aluNota.Location = new System.Drawing.Point(313, 71);
-            this.aluNota.Name = "aluNota";
-            this.aluNota.Size = new System.Drawing.Size(119, 20);
-            this.aluNota.TabIndex = 4;
-            // 
             // listaAlumnos
             // 
             this.listaAlumnos.Location = new System.Drawing.Point(41, 131);
@@ -87,19 +81,27 @@
             this.listaAlumnos.Size = new System.Drawing.Size(438, 207);
             this.listaAlumnos.TabIndex = 5;
             // 
+            // aluNota
+            // 
+            this.aluNota.Location = new System.Drawing.Point(287, 70);
+            this.aluNota.Name = "aluNota";
+            this.aluNota.Size = new System.Drawing.Size(108, 20);
+            this.aluNota.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(606, 379);
-            this.Controls.Add(this.listaAlumnos);
             this.Controls.Add(this.aluNota);
+            this.Controls.Add(this.listaAlumnos);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.aluNombre);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.aluNota)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,8 +113,8 @@
         private System.Windows.Forms.TextBox aluNombre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox aluNota;
         private System.Windows.Forms.TextBox listaAlumnos;
+        private System.Windows.Forms.NumericUpDown aluNota;
     }
 }
 
